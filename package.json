@@ -1,0 +1,36 @@
+{
+  "name": "sina-blog-downloader",
+  "version": "1.0.0",
+  "description": "Sina Blog Downloader",
+  "main": "app.ts",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./src/app.ts",
+    "start": "node ./dist/app.js",
+    "startTest": "node ./dist/test.js",
+    "build": "tsc",
+    "test": "mocha",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chanxishe/sina-blog-downloader.git"
+  },
+  "author": "gavfu",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.0",
+    "mocha": "^9.0.1",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.0.3"
+  }
+}
